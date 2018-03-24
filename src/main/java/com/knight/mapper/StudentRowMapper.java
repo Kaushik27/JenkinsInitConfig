@@ -7,7 +7,7 @@ import org.springframework.jdbc.core.RowMapper;
 
 import com.knight.dto.Student;
 
-public class PersonRowMapper implements RowMapper<Student> {
+public class StudentRowMapper implements RowMapper<Student> {
 
 	@Override
 	public Student mapRow(ResultSet rs, int rowNum) throws SQLException {
