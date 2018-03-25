@@ -1,0 +1,35 @@
+<html>
+
+<head>
+<title>AngularJS First Application</title>
+
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+<script src="/app.js"></script>
+</head>
+
+
+
+<body>
+	<h1>Sample Application</h1>
+
+	<div ng-app="myApp" ng-controller="myCtrl">
+		<p>
+			Name: <input type="text" ng-model="student.name">
+		</p>
+		<p>
+			Age: <input type="text" ng-model="student.age">
+		</p>
+		<p>
+			Gender: <input type="text" ng-model="student.gender">
+		</p>
+		<p>
+			Hello <span ng-bind="student.name"></span>!
+		</p>
+		<p>
+			<button ng-click="insertData(student)">Submit</button>
+		</p>
+	</div>
+
+</body>
+</html>

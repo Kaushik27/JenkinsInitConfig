@@ -28,7 +28,7 @@ repositories {
 dependencies {
 
 compile group: 'org.springframework.boot', name: 'spring-boot-starter-jdbc', version: '1.5.8.RELEASE'
-
+compile fileTree(dir: 'lib', include: '*.jar')
 compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '1.5.8.RELEASE'
 
 

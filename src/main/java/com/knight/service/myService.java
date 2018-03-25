@@ -22,5 +22,9 @@ public class myService {
 		return repo.getAllValueFromDao();
 	}
 
+	public int insertDataFromView(Student student) {
+		return repo.insertData(student);
+	}
+
 	
 }
